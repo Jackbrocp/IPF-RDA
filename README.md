@@ -22,24 +22,30 @@ You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
 <!-- Install a fitting Pytorch version for your setup with GPU support, as our implementation  -->
 
 ### Train Examples 
+#### Download the CIFAR dataset
+Put the downloaded datasets into  ```./data/CIFAR10(or CIFAR100)/```
+
 #### Download the results of CDIEA on CIFAR-10/100
-[CIFAR-10]()
+[CIFAR-10](https://drive.google.com/file/d/18Kx7m7RkW4GtQjK-ltWbrJxKltg-aQIp/view?usp=sharing)
 
-[CIFAR-100]()
+[CIFAR-100](https://drive.google.com/file/d/12mkyXfyrzmcSBBg4Cca5H6u6mbrhnzmC/view?usp=sharing)
 
-Download the results and put them into  ```.//```.
+Download the results and put them into  ```./data/CIFAR10(or CIFAR100)/```.
 #### Parameters
 ```--conf```，path to the config file, e.g., ```confs/resnet18.yaml```
 #### Examples 
-Apply IPF-RDA as a data augmentation method to train the ResNet-18 model on CIFAR-10/100 datasets.
+Integrate Cutout into IPF-RDA as a robust data augmentation method to train the ResNet-18 model on CIFAR-10/100 datasets. 
 
-```python train.py --conf confs/resnet18.yaml```
+```python train.py --conf confs/resnet18.yaml --aug 'cutout' --dataset 'CIFAR10' --cutout_length 16```
+
+```python train.py --conf confs/resnet18.yaml --aug 'cutout' --dataset 'CIFAR100' --cutout_length 8```
 
 #### More Examples
-Run additional comparisons on AdvMask combined with other data augmentation methods. (e.g., "AdvMask+AutoAugment")
-First, change ```mask``` parameter in the config file, e.g. "AutoAugment", "Fast-AutoAugment"
+Integrate AutoAugment into IPF-RDA as a robust data augmentation method to train the ResNet-18 model on CIFAR-10/100 datasets. 
 
-```python additional_comparison.py --conf confs/resnet18.yaml```
+```python train.py --conf confs/resnet18.yaml --aug 'autoaugment' --dataset 'CIFAR10' --cutout_length 16 --fast_level 2 ```
+
+```python train.py --conf confs/resnet18.yaml --aug 'autoaugment' --dataset 'CIFAR100' --cutout_length 8 --fast_level 2 ```
 
 ## Citation
 If you find this repository useful in your research, please cite our paper:
