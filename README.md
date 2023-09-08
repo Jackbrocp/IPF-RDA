@@ -26,9 +26,9 @@ You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
 Put the downloaded datasets into  ```./data/CIFAR10(or CIFAR100)/```
 
 #### Download the results of CDIEA on CIFAR-10/100
-[CIFAR-10](https://drive.google.com/file/d/18Kx7m7RkW4GtQjK-ltWbrJxKltg-aQIp/view?usp=sharing)
+[CIFAR-10](https://drive.google.com/file/d/1CtoVSRughXDadC1q77goEj86rU1ELpCP/view?usp=sharing)
 
-[CIFAR-100](https://drive.google.com/file/d/12mkyXfyrzmcSBBg4Cca5H6u6mbrhnzmC/view?usp=sharing)
+[CIFAR-100](https://drive.google.com/file/d/1l9yaAaDZkb7AkN7jDar0P3xN8zEB58W_/view?usp=sharing)
 
 Download the results and put them into  ```./data/CIFAR10(or CIFAR100)/```.
 #### Parameters
