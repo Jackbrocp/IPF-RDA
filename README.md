@@ -1,6 +1,6 @@
 # IPF-RDA: An Information-Preserving Framework for Robust Data Augmentation
 
-This is the official implementation of IPF-RDA (http://arxiv.org/abs/), as was used for the paper.
+This is the official implementation of IPF-RDA (http://arxiv.org/...), as was used for the paper. Code coming soon.
  
 You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
 ## Use IPF-RDA for data augmentation
@@ -11,7 +11,7 @@ You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
 `cd IPF-RDA`
 
 ## Updates
-- 2023//: Initial release
+- 2025//: Initial release
 
 ## Getting Started
 ### Requirements
