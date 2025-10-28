@@ -1,8 +1,11 @@
-# IPF-RDA: An Information-Preserving Framework for Robust Data Augmentation
+# [IEEE TPAMI 2025]🎉 IPF-RDA: An Information-Preserving Framework for Robust Data Augmentation
 
-This is the official implementation of IPF-RDA (http://arxiv.org/...), as was used for the paper. Code coming soon.
+This is the official implementation of [IPF-RDA](https://arxiv.org/abs/2509.16678), as was used for the paper. 
  
 You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
+
+Code coming soon.
+
 ## Use IPF-RDA for data augmentation
 - Clone this directory and `cd`  into it.
  
@@ -50,6 +53,12 @@ Integrate AutoAugment into IPF-RDA as a robust data augmentation method to train
 ## Citation
 If you find this repository useful in your research, please cite our paper:
 
-`
-citation
-`
+```
+@article{yang2025ipf,
+  title={IPF-RDA: An Information-Preserving Framework for Robust Data Augmentation},
+  author={Yang, Suorong and Yang, Hongchao and Guo, Suhan and Shen, Furao and Zhao, Jian},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  publisher={IEEE}
+}
+```
