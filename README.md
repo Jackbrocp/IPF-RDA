@@ -4,7 +4,7 @@ This is the official implementation of [IPF-RDA](https://arxiv.org/abs/2509.1667
  
 You can directly start off using our implementations on CIFAR-10 and CIFAR-100.
 
-Code coming soon.
+Some of the training logs are put into ```./Log/``` for reference.
 
 ## Use IPF-RDA for data augmentation
 - Clone this directory and `cd`  into it.
@@ -14,7 +14,7 @@ Code coming soon.
 `cd IPF-RDA`
 
 ## Updates
-- 2025//: Initial release
+- 2025/10: Code release
 
 ## Getting Started
 ### Requirements
@@ -25,15 +25,15 @@ Code coming soon.
 <!-- Install a fitting Pytorch version for your setup with GPU support, as our implementation  -->
 
 ### Train Examples 
-#### Download the CIFAR dataset
-Put the downloaded datasets into  ```./data/CIFAR10(or CIFAR100)/```
+#### Download the CIFAR results and put in data/
+mkdir data
 
 #### Download the results of CDIEA on CIFAR-10/100
-[CIFAR-10](https://drive.google.com/file/d/1CtoVSRughXDadC1q77goEj86rU1ELpCP/view?usp=sharing)
+[CIFAR-10](https://drive.google.com/file/d/1j0isu0eaXBDklyMi36RTrPPYtTb3I5Kg/view?usp=sharing)
 
-[CIFAR-100](https://drive.google.com/file/d/1l9yaAaDZkb7AkN7jDar0P3xN8zEB58W_/view?usp=sharing)
+[CIFAR-100](https://drive.google.com/file/d/1wDLfl34pCAO3-Ezw0kGr8zNUMPk1AEDH/view?usp=sharing)
 
-Download the results and put them into  ```./data/CIFAR10(or CIFAR100)/```.
+Download the results and put them into  ```./data/```.
 #### Parameters
 ```--conf```，path to the config file, e.g., ```confs/resnet18.yaml```
 #### Examples 
@@ -46,9 +46,9 @@ Integrate Cutout into IPF-RDA as a robust data augmentation method to train the 
 #### More Examples
 Integrate AutoAugment into IPF-RDA as a robust data augmentation method to train the ResNet-18 model on CIFAR-10/100 datasets. 
 
-```python train.py --conf confs/resnet18.yaml --aug 'autoaugment' --dataset 'CIFAR10' --cutout_length 16 --fast_level 2 ```
+```python train.py --conf confs/resnet18.yaml --aug 'autoaugment' --dataset 'CIFAR10' --cutout_length 16 ```
 
-```python train.py --conf confs/resnet18.yaml --aug 'autoaugment' --dataset 'CIFAR100' --cutout_length 8 --fast_level 2 ```
+```python train.py --conf confs/resnet18.yaml --aug 'autoaugment' --dataset 'CIFAR100' --cutout_length 8 ```
 
 ## Citation
 If you find this repository useful in your research, please cite our paper:
